@@ -21,7 +21,7 @@ public class Mouse_Keyboard_Operation {
 		driver.manage().window().maximize();
 		driver.get("https://en-gb.facebook.com/");
 		Robot robot = new Robot();
-		driver.findElement(By.xpath("//a[contains(text(),'Create New')]")).click();
+			driver.findElement(By.xpath("//a[contains(text(),'Create New')]")).click();
 		Thread.sleep(3000);
 		robot.mouseMove(830, 300);
 		Thread.sleep(3000);

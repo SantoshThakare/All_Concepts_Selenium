@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumAutomate.SeleniumAutomate.LounchBrowser">
+      <class name="SeleniumAutomate.SeleniumAutomate.Facebook_CSS_selector">
         <methods>
-          <include name="edgeBrowser"/>
+          <include name="facebookCSS"/>
         </methods>
-      </class> <!-- SeleniumAutomate.SeleniumAutomate.LounchBrowser -->
+      </class> <!-- SeleniumAutomate.SeleniumAutomate.Facebook_CSS_selector -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

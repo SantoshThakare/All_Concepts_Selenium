@@ -18,13 +18,17 @@ public class Facebook_Login {
 		driver.get("https://en-gb.facebook.com/");
 		Thread.sleep(2000);
 		
-		driver.findElement(By.name("email")).sendKeys("santoshthakare50@gmail.com");
+		driver.findElement(By.name("email")).sendKeys("santoshthakare5000@gmail.com");
 		Thread.sleep(2000);
 
-		driver.findElement(By.id("pass")).sendKeys("santoshthakare");
+		driver.findElement(By.id("pass")).sendKeys("santosh@123");
 		Thread.sleep(2000);
 		
-		driver.findElement(By.name("login")).click();
+		driver.findElement(By.cssSelector("button[name = \"login\"]")).click();
+		Thread.sleep(2000);  
+
+		
+//		driver.findElement(By.name("login")).click();
  
 //		driver.findElement(By.id("pass")).clear();
 		
