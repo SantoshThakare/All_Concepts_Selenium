@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumAutomate.SeleniumAutomate.Facebook_CSS_selector">
+      <class name="SeleniumAutomate.SeleniumAutomate.VerifyhomepageUsingTitle">
         <methods>
-          <include name="facebookCSS"/>
+          <include name="home_page"/>
         </methods>
-      </class> <!-- SeleniumAutomate.SeleniumAutomate.Facebook_CSS_selector -->
+      </class> <!-- SeleniumAutomate.SeleniumAutomate.VerifyhomepageUsingTitle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

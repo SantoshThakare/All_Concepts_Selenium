@@ -1,5 +1,7 @@
 package SeleniumAutomate.SeleniumAutomate;
 
+import java.util.Scanner;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,6 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 public class Facebook_XPath {
+	
 	
 	@Test
 	public void login() throws InterruptedException {
@@ -22,17 +25,20 @@ public class Facebook_XPath {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[contains(@name,'pass')]")).sendKeys("santosh@123");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//button[contains(text(),'Log')]")).click();
-		Thread.sleep(2000);
+		
+//		driver.findElement(By.xpath("//button[contains(text(),'Log')]")).click();
+//		Thread.sleep(2000);	
 
 //		driver.findElement(By.xpath("// a[text()='Forgotten password?']")).click();
+//		Thread.sleep(2000);
+
 //		driver.findElement(By.xpath("//a[starts-with(text(),'F')]")).click();
 //		Thread.sleep(2000);
 
 //		driver.findElement(By.xpath("//input[@id ='identify_email']")).sendKeys("santoshthakare5000@gamail.com);
 //		Thread.sleep(2000);
-//		driver.findElement(By.xpath("//a[contains(text(),'Cancel')]")).click();
-//		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[contains(text(),'Cancel')]")).click();
+		Thread.sleep(2000);
 //		driver.findElement(By.xpath("//button[@name='did_submit']")).click();
 //		Thread.sleep(2000);
 
@@ -87,6 +93,7 @@ public class Facebook_XPath {
 //		Thread.sleep(2000);	
 		// driver1.close();
 	}
+	
 
 }
 

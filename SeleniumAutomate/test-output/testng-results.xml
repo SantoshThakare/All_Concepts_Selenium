@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-24T00:39:06 IST" name="Default suite" finished-at="2022-08-24T00:39:53 IST" duration-ms="46542">
+  <suite started-at="2022-08-24T23:42:30 IST" name="Default suite" finished-at="2022-08-24T23:42:50 IST" duration-ms="19874">
     <groups>
     </groups>
-    <test started-at="2022-08-24T00:39:06 IST" name="Default test" finished-at="2022-08-24T00:39:53 IST" duration-ms="46542">
-      <class name="SeleniumAutomate.SeleniumAutomate.Facebook_CSS_selector">
-        <test-method signature="facebookCSS()[pri:0, instance:SeleniumAutomate.SeleniumAutomate.Facebook_CSS_selector@729d991e]" started-at="2022-08-24T00:39:06 IST" name="facebookCSS" finished-at="2022-08-24T00:39:53 IST" duration-ms="46460" status="PASS">
+    <test started-at="2022-08-24T23:42:30 IST" name="Default test" finished-at="2022-08-24T23:42:50 IST" duration-ms="19874">
+      <class name="SeleniumAutomate.SeleniumAutomate.VerifyhomepageUsingTitle">
+        <test-method signature="home_page()[pri:0, instance:SeleniumAutomate.SeleniumAutomate.VerifyhomepageUsingTitle@729d991e]" started-at="2022-08-24T23:42:30 IST" name="home_page" finished-at="2022-08-24T23:42:50 IST" duration-ms="19803" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- facebookCSS -->
-      </class> <!-- SeleniumAutomate.SeleniumAutomate.Facebook_CSS_selector -->
+        </test-method> <!-- home_page -->
+      </class> <!-- SeleniumAutomate.SeleniumAutomate.VerifyhomepageUsingTitle -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

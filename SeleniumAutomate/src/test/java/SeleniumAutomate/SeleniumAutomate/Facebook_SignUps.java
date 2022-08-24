@@ -12,21 +12,6 @@ import org.testng.annotations.Test;
 
 public class Facebook_SignUps {
 	
-	@Test
-	public void selection() throws InterruptedException {
-		Scanner sc = new Scanner(System.in);
-		System.out.println(" 1.signUp_crome\n 2.signUp_edge\n ");
-		int choice = sc.nextInt();
-		
-		switch (choice) {
-		case 1:	signUp_crome();
-			break;
-		case 2: signUp_edge();
-			break;
-	
-			}
-
-		}	
 
 	@Test
 	public void signUp_crome() throws InterruptedException {
