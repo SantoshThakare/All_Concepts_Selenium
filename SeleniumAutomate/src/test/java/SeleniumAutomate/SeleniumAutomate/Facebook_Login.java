@@ -41,6 +41,6 @@ public class Facebook_Login {
  
 //		driver.findElement(By.id("pass")).clear();
 		
-		driver.close();
+//		driver.close();
 	}
 }

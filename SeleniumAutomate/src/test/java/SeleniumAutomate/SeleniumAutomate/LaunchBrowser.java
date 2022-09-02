@@ -5,6 +5,7 @@ import java.util.Scanner;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.opera.OperaDriver;
 import org.testng.annotations.Test;
 
 public class LaunchBrowser {
@@ -12,6 +13,7 @@ public class LaunchBrowser {
 	public static WebDriver driver;
 	public String WebsiteURL = "https://en-gb.facebook.com/";
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	public void selection() throws InterruptedException {
 		Scanner sc = new Scanner(System.in);
@@ -38,9 +40,9 @@ public class LaunchBrowser {
 
 			break;
 		case 3: 
-			System.setProperty("webdriver.edge.driver","C:\\Users\\Shree\\eclipse-workspace\\Selenium_with_java\\SeleniumAutomate\\Driver\\operadriver.exe");
+			System.setProperty("webdriver.opera.driver","C:\\Users\\Shree\\eclipse-workspace\\Selenium_with_java\\SeleniumAutomate\\Driver\\operadriver.exe");
 			
-			driver = new EdgeDriver();
+			driver = new OperaDriver();
 			driver.manage().window().maximize();
 			driver.get(WebsiteURL);
 			driver.close();

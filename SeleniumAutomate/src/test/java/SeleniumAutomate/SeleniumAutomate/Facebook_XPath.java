@@ -32,7 +32,7 @@ public class Facebook_XPath {
 //		driver.findElement(By.xpath("// a[text()='Forgotten password?']")).click();
 //		Thread.sleep(2000);
 
-//		driver.findElement(By.xpath("//a[starts-with(text(),'F')]")).click();
+//		driver.findElement(By.xpath("//a[starts-with(text(),'F  ')]")).click();
 //		Thread.sleep(2000);
 
 //		driver.findElement(By.xpath("//input[@id ='identify_email']")).sendKeys("santoshthakare5000@gamail.com);
@@ -82,7 +82,7 @@ public class Facebook_XPath {
 		driver1.findElement(By.xpath("//label[text()='Male']")).click();
 		Thread.sleep(2000);
 		driver1.findElement(By.xpath("//button[contains(text(),'Sign')]")).click();
-		Thread.sleep(2000);
+		Thread.sleep(2000);  
 //		driver1.findElement(By.xpath("//a[text()='Learn more']")).click();
 //		Thread.sleep(2000);
 //		driver1.findElement(By.xpath("//a[@id='terms-link']")).click();

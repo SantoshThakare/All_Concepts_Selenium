@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class VerifyhomepageUsingTitle {
 	@Test
-	public void home_page() throws InterruptedException {
+	public void home_page_title() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Shree\\eclipse-workspace\\Selenium_with_java\\SeleniumAutomate\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://en-gb.facebook.com/");
@@ -21,7 +21,7 @@ public class VerifyhomepageUsingTitle {
 		driver.findElement(By.cssSelector("button[name = \"login\"]")).click();
 		Thread.sleep(2000);
 		
-		String expectedTitle = "Enter Time";
+		String expectedTitle = "Facebook";
 		String actualTitle = driver.getTitle();
 		//If actual title contains "Enter Time" text then home page is displayed.
 		if (actualTitle.contains(expectedTitle))
@@ -31,7 +31,7 @@ public class VerifyhomepageUsingTitle {
 		{
 		System.out.println("Home page is NOT displayed");
 		}
-		driver.close();
+//		driver.close();
 		
 	}
 	
