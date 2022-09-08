@@ -39,9 +39,9 @@ public class Handling_Pop_Up {
 		driver.navigate().to("https://demoqa.com/alerts");
 		driver.manage().window().maximize();
 		
-		driver.findElement(By.id("confirmButton")).click();
-		Thread.sleep(2000);
-		Alert alert = driver.switchTo().alert();
+		driver.findElement(By.xpath("//button[@id=\"confirmButton\"]")).click();
+		
+		Alert alert = driver.switchTo().alert();  
 		Thread.sleep(2000);
 
 		alert.accept();
@@ -51,13 +51,10 @@ public class Handling_Pop_Up {
 	@Test
 	public void promt_pop_up() throws InterruptedException {
 		driver.navigate().to("https://demoqa.com/alerts");
-		Thread.sleep(2000);
-
+		
 		driver.manage().window().maximize();
-		Thread.sleep(2000);
-
+		
 		driver.findElement(By.id("promtButton")).click();
-		Thread.sleep(2000);
 		
 		Alert alert = driver.switchTo().alert();
 		alert.sendKeys("Santosh");
@@ -73,21 +70,9 @@ public class Handling_Pop_Up {
 		driver.findElement(By.xpath("//*[local-name()='svg' and @fill=\"none\" and @class =\" c-pointer c-neutral-900\"]/*[local-name()='path']")).click();
 		driver.findElement(By.xpath("//*[local-name()='svg' and @class=\"t-all ml-2\"]")).click();
 
-//		driver.findElement(By.xpath("//div[contains(text(),'Tue, Sep 14')]")).click();
+		driver.findElement(By.xpath("//div[contains(text(),'Wed, Sep 14')]")).click();
 		Thread.sleep(3000);
-		driver.findElement(By.linkText("24")).click();
-
-		
-	
+		driver.findElement(By.linkText("14")).click();
 		
 	}	
-	
-	@Test
-	public void date_taker_pop_up() {
-		driver.navigate().to("https://www.irctc.co.in/nget/profile/user-registration");
-		driver.manage().window().maximize();
-	
-		
-	}	
-
 }
