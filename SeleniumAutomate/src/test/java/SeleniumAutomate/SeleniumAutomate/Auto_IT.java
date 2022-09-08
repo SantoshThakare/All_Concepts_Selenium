@@ -1,5 +1,6 @@
 package SeleniumAutomate.SeleniumAutomate;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -31,11 +32,11 @@ public class Auto_IT {
 		driver = new ChromeDriver();
 		driver.get("http://nervgh.github.io/pages/angular-file-upload/examples/simple");
 		driver.manage().window().maximize();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@multiple='']")).sendKeys("E:\\priyanka.pdf");
+		
+		driver.findElement(By.xpath("//input[@multiple='']")).sendKeys("E:\\app.pdf");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[@ng-click=\"item.upload()\"]")).click();
-		Thread.sleep(2000);
+		
 		driver.close();
 	}
 	
@@ -45,9 +46,10 @@ public class Auto_IT {
 		driver.get("https://www.ilovepdf.com/pdf_to_word");
 		driver.manage().window().maximize();
 		driver.findElement(By.linkText("Select PDF file")).click();
-		Runtime.getRuntime().exec("E:\\Shree\\Documents\\FileUploadScript.exe");
 		Thread.sleep(3000);
-//		driver.close();		
+		Runtime.getRuntime().exec("‪E:\\Shree\\Documents\\FileUploadScript.exe");
+		
+		driver.close();		
 	}
 	@Test
 	public void file_upload_auto_it_2() throws IOException, InterruptedException {
@@ -56,8 +58,8 @@ public class Auto_IT {
 		driver.manage().window().maximize();
 		driver.findElement(By.linkText("Choose file")).click();
 		Runtime.getRuntime().exec("E:\\Shree\\Documents\\FileUploadScriptVikky.exe");
-		Thread.sleep(3000);
-		driver.close();		
+		
+//		driver.close();		
 	}
 	@Test
 	public void file_download() throws InterruptedException {

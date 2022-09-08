@@ -66,13 +66,14 @@ public class Handling_Pop_Up {
 	public void hidden_div_pop_up() throws InterruptedException {
 		driver.navigate().to("https://www.cleartrip.com/");
 		driver.manage().window().maximize();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0, 1000)");
 		
-		driver.findElement(By.xpath("//*[local-name()='svg' and @fill=\"none\" and @class =\" c-pointer c-neutral-900\"]/*[local-name()='path']")).click();
-		driver.findElement(By.xpath("//*[local-name()='svg' and @class=\"t-all ml-2\"]")).click();
+//		driver.findElement(By.xpath("//*[local-name()='svg' and @fill=\"none\" and @class =\" c-pointer c-neutral-900\"]/*[local-name()='path']")).click();
+//		driver.findElement(By.xpath("//*[local-name()='svg' and @class=\"t-all ml-2\"]")).click();
 
-		driver.findElement(By.xpath("//div[contains(text(),'Wed, Sep 14')]")).click();
-		Thread.sleep(3000);
-		driver.findElement(By.linkText("14")).click();
+		driver.findElement(By.xpath("//div[@aria-label=\"Wed Sep 14 2022\"]")).click();
+		
 		
 	}	
 }

@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumAutomate.SeleniumAutomate.Web_Table">
+      <class name="SeleniumAutomate.SeleniumAutomate.Handling_Pop_Up">
         <methods>
-          <include name="browserlaunch"/>
-          <include name="auto_suggestion_ex_google_search"/>
+          <include name="launchrowser"/>
+          <include name="hidden_div_pop_up"/>
         </methods>
-      </class> <!-- SeleniumAutomate.SeleniumAutomate.Web_Table -->
+      </class> <!-- SeleniumAutomate.SeleniumAutomate.Handling_Pop_Up -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
